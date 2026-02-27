@@ -59,8 +59,14 @@ int main() {
   settings.antiAliasingLevel = 4;
 
   // create window
-  sf::RenderWindow window(sf::VideoMode({1000, 300}), "Piano",
+  sf::VideoMode desktop = sf::VideoMode::getDesktopMode();
+  const int windowWidth = 1000, windowHeight = 300;
+  sf::RenderWindow window(sf::VideoMode({windowWidth, windowHeight}), "SFML",
                           sf::State::Windowed, settings);
+  int posX = (desktop.size.x - windowWidth) / 2;
+  int posY = (desktop.size.y - windowHeight) / 2;
+  window.setPosition({posX, posY});
+  window.setTitle("Piano");
 
   // shape of key
   sf::RectangleShape shape;
