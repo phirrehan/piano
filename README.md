@@ -2,7 +2,7 @@
 
 This is a simple Piano made using C++ with SFML library. It is cross-platform and will work on Linux, MacOS, and Windows. Here is a sample video of the piano on linux:
 
-https://github.com/user-attachments/assets/7f199422-1647-4945-8caa-ee14895a0163
+https://github.com/user-attachments/assets/950df874-6d36-45cd-83e9-264680c8ce4a
 
 # Dependencies
 
